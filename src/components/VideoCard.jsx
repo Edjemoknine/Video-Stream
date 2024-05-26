@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const VideoCard = ({ item }) => {
   return (
     <Link to={`/video/${item.id.videoId}`}>
-      <div className=" md:w-80 h-80 rounded-lg cursor-pointer hover:scale-10 transition duration-300 hover:shadow-2xl  bg-base-100 shadow-xl">
+      <div className=" md:w-72 h-72 rounded-lg cursor-pointer hover:scale-10 transition duration-300 hover:shadow-2xl  bg-base-100 shadow-xl">
         <figure className="h-52">
           <img
             src={item?.snippet?.thumbnails?.medium?.url}
