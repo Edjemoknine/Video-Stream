@@ -3,7 +3,7 @@ const formatter = Intl.NumberFormat("en", { notation: "compact" });
 const ChannelCard = ({ item, stats }) => {
   return (
     <Link to={`/channel/${item?.id?.channelId}`}>
-      <div className="flex justify-center max-w-2xl gap-5 p-5 items-center h-80 bg-base-100 shadow-xl">
+      <div className="flex justify-center max-w-2xl w-full gap-5 p-5 items-center h-80 bg-base-100 shadow-xl">
         <figure className="w-44 h-44 hidden sm:block">
           <img
             className="h-full w-full rounded-full"
