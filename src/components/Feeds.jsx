@@ -45,9 +45,9 @@ const Feeds = ({ Term }) => {
               {item?.id?.channelId && (
                 // <SkeletonChannel />
                 <Suspense fallback={"Loading..."}>
-              <div className="w-[100wh - 200px]">
+            
                   <ChannelCard key={item?.id?.videoId} item={item} stats={""} />
-              </div>
+            
                 </Suspense>
               )}
             </div>
