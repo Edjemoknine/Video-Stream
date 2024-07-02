@@ -24,7 +24,7 @@ const Home = ({ Term }) => {
           <p className="text-[10px]">Vous</p>
         </div>
       </div>
-      <div className="container mx-auto ">
+      <div className="px-8 ">
         <Feeds Term={Term} />
       </div>
     </div>
