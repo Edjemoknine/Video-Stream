@@ -32,7 +32,7 @@ const Feeds = ({ Term }) => {
   if (isError) return <div>{error}</div>;
   return (
     <div className="pb-20 h-screen overflow-y-auto">
-      <div className="flex flex-wrap gap-4 mt-3 ">
+      <div className="grid sm:grid-col-2 md:grid-col-4 gap-4 mt-3 ">
         {data &&
           data?.items?.map((item, i) => (
             <div key={i}>
@@ -45,7 +45,7 @@ const Feeds = ({ Term }) => {
               {item?.id?.channelId && (
                 // <SkeletonChannel />
                 <Suspense fallback={"Loading..."}>
-              <div className=" w-screen">
+              <div className="col-span-4">
                   <ChannelCard key={item?.id?.videoId} item={item} stats={""} />
               </div>
                 </Suspense>
