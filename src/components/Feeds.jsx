@@ -32,7 +32,7 @@ const Feeds = ({ Term }) => {
   if (isError) return <div>{error}</div>;
   return (
     <div className="pb-20 h-screen overflow-y-auto">
-      <div className="flex flex-wrap gap-4 mt-3 ">
+      <div className="flex flex-wrap gap-7 mt-3 ">
         {data &&
           data?.items?.map((item, i) => (
             <div key={i}>
